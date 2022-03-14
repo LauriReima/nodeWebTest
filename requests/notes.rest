@@ -13,3 +13,6 @@ Content-Type: application/json
 {
     "content": "hyvälle"
 }
+###
+PUT https://radiant-ridge-20224.herokuapp.com/notes/1
+Content-Type: application/json

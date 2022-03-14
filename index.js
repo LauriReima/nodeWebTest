@@ -64,6 +64,17 @@ app.delete("/notes/:id", (req, res) => {
 
   res.status(204).end();
 });
+app.post("/notes/:id", (req,res) => {
+  const id = Number(req.params.id)
+  const note = {
+    id: id,
+    content: req.body.content,
+    date: new Date(),
+    important: !req.body.important
+  }
+  notes = notes.concat(note)
+  res.json(note)
+})
 
 const generateId = () => {
   const maxId = notes.length > 0 ? notes.map(n => n.id).sort((a,b) => a - b).reverse()[0] : 0
