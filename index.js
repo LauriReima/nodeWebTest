@@ -16,6 +16,7 @@ const error = (request, response) => {
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger)
+app.use(express.static('build'))
 
 
 let notes = [

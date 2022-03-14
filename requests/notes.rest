@@ -1,15 +1,15 @@
 GET http://localhost:3001/notes/
 
 ###
-DELETE http://localhost:3001/notes/4
+DELETE https://radiant-ridge-20224.herokuapp.com/notes/4
 
 ###
 GET http://localhost:3001/notes/1
 
 ###
-POST http://localhost:3001/notes/ 
+POST https://radiant-ridge-20224.herokuapp.com/notes
 Content-Type: application/json
 
 {
-    "content": "joulumieli"
+    "content": "hyvälle"
 }
