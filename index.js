@@ -12,7 +12,7 @@ const logger = (request, response, next) => {
 const error = (request, response) => {
   response.status(404).send({error: 'unknown endpoint'})
 }
-
+// vähä corssii vähä
 app.use(cors())
 app.use(bodyParser.json())
 app.use(logger)
