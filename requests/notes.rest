@@ -1,18 +1,22 @@
-GET http://localhost:3001/notes/
+GET http://localhost:3001/api/notes/
 
 ###
 DELETE https://radiant-ridge-20224.herokuapp.com/notes/4
 
 ###
-GET http://localhost:3001/notes/1
+DELETE http://localhost:3001/api/notes/62306c2c705117a271967da2
+###
+GET http://localhost:3001/api/notes/1
 
 ###
-POST https://radiant-ridge-20224.herokuapp.com/notes
+POST http://localhost:3001/api/notes/
 Content-Type: application/json
 
 {
-    "content": "hyvälle"
+    "content": "vai pysyykö"
 }
 ###
-PUT https://radiant-ridge-20224.herokuapp.com/notes/1
+PUT http://localhost:3001/api/notes/6234ba4b48ebf9b8a7fc5998
 Content-Type: application/json
+
+{}
